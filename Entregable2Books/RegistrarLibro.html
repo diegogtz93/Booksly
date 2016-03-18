@@ -1,0 +1,105 @@
+
+
+<head>
+
+<title>Books.ly</title>
+
+<script type="text/javascript" ></script>
+<meta charset="utf-8" />
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+	<script src="jquery.ui.datepicker-es.js"></script>
+
+	<script>
+		$(function () {
+		$.datepicker.setDefaults($.datepicker.regional["es"]);
+		$("#datepicker").datepicker({
+		firstDay: 1
+		});
+		});
+	</script>
+
+</head>
+<body background ="Imagenes/fondo.jpg" >
+	
+	
+	<div id="form_container">
+	
+		<h1><a>BOOKAFINITY</a></h1>
+		<form method="get" action="RegistroLibro" name="libros">
+					<div class="form_description">
+			<h2>BOOKAFINITY</h2>
+			<h3><p>Registrar Libro</p></h3>
+		</div>						
+			<ul >
+			
+					<li id="li_1" >
+		<label class="description" for="element_1">Titulo Libro </label>
+		<div>
+			<input id="element_1" name="titulo" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_2" >
+		<label class="description" for="element_2">Autor </label>
+		<div>
+			<input id="element_2" name="Autor" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_3" >
+		<label class="description" for="element_3">Editorial </label>
+		<div>
+			<input id="element_3" name="editorial" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>	<li id="li_3" >
+		<label class="description" for="element_3">Genero </label>
+		<div>
+			<input id="element_3" name="genero" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_4" >
+		<label class="description" for="element_4">Descripcion </label>
+		<div>
+			<textarea id="element_4" name="Descripcion" class="element textarea medium"></textarea> 
+		</div> 
+		</li>
+		<li id="li_7" >
+		<label class="description" for="element_7">Puntuacion </label>
+		<div>
+			<input id="element_7" name="Puntuacion" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li> 		<li id="li_5" >
+		<label class="description" for="element_5">Precio Venta
+ </label>
+		<span class="symbol">&#8364;</span>
+		<span>
+			<input id="element_5_1" name="PV" class="element text currency" size="10" value="" type="text" /> .	
+			<label for="element_5_1">Euros</label>
+		</span>
+		
+		 
+		</li>		<li id="li_6" >
+		<label class="description" for="element_6">Precio Alquiler
+ </label>
+		<span class="symbol">&#8364;</span>
+		<span>
+			<input id="element_6_1" name="PA" class="element text currency" size="10" value="" type="text" /> .		
+			<label for="element_6_1">Euros</label>
+		</span>
+		
+		 
+		</li>			<li id="li_7" > 
+		<FONT COLOR="black">Fecha de compra  
+		<div>
+			<INPUT type="text" id="datepicker" name="fecha" size="9">
+		</div>
+		</li>
+					<li class="buttons">
+			    <input type="hidden" name="form_id" value="1099625" />
+			    
+				<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+		</li>
+			</ul>
+		</form>	
+		
+	</div>
+	<a href="PaginaInico.html">Ir al menu</a>
+	</body>
+</html>

@@ -1,0 +1,12 @@
+
+3560	El Perro	Juan Antonio	Comedia	ES divertido	8	
+2795	La Perdida	Aitor Garcia	Drama	Un poco duro	7
+2101	Tintin	Jose Antonio	Aventura	Etretenido	9
+
+7896	La Niebla	Gerge Lukas	Suspense	Esta interesante	10
+
+8434	Wally	Exequiel	Comedia	Me he reido	6
+
+9847	Barcos de papel	Modesto	Suspense Jaja	3
+
+

@@ -1,0 +1,144 @@
+
+
+<head>
+
+<title>Books.ly</title>
+<link rel="stylesheet" type="text/css" href="NuestroDiseño.css"> 
+<script type="text/javascript" ></script>
+<meta charset="utf-8" />
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.1/themes/base/jquery-ui.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.1/jquery-ui.js"></script>
+	<script src="jquery.ui.datepicker-es.js"></script>
+
+	<script>
+		$(function () {
+		$.datepicker.setDefaults($.datepicker.regional["es"]);
+		$("#datepicker").datepicker({
+		firstDay: 1
+		});
+		});
+	</script>
+
+
+
+<body>
+<style>
+body {
+  background-color: rgba(255,207,3,0);
+} 
+
+pre {
+  background-color: yellow;
+  border-width: 0px;
+}
+
+html {
+  background: url("fondo.jpg") no-repeat center top fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+table {
+  background-color: yellow #;
+  margin: 5px;
+  padding: 5px;
+}
+
+td {
+  margin: 5px;
+  padding: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: yellow;
+}
+
+.head-tr{
+  background-color: yellow;
+}
+
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.highlight
+{
+  background-color: yellow;
+  border-style: outset;
+  border-width: 2px;
+  border-color: yellow;
+}
+
+.subrayado
+{
+	background-color: yellow;
+	border-style: outset;
+	border-width: 2px;
+	border-color: yellow;
+}
+	
+	</style>
+	</head>
+	<div id="form_container">
+	
+		<h1><a>BOOKAFINITY</a></h1>
+		<form method="get" action="EditarLibro" name="libros">
+					<div class="form_description">
+			<h2>BOOKAFINITY</h2>
+			<h3><p>Editar Libro</p></h3>
+		</div>						
+			<ul >
+			<li id="li_1" >
+		<label class="description" for="element_1"><FONT SIZE="+1" COLOR="white" FACE="Arial">ID </FONT></label>
+		<div>
+			<input id="element_1" name="ID" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>
+					<li id="li_1" >
+		<label class="description" for="element_1"><FONT SIZE="+1" COLOR="white" FACE="Arial">Titulo Libro</FONT> </label>
+		<div>
+			<input id="element_1" name="TituloLibro" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_2" >
+		<label class="description" for="element_2"><FONT SIZE="+1" COLOR="white" FACE="Arial">Autor</FONT> </label>
+		<div>
+			<input id="element_2" name="Autor" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_3" >
+		<label class="description" for="element_3"><FONT SIZE="+1" COLOR="white" FACE="Arial">Editorial</FONT> </label>
+		<div>
+			<input id="element_3" name="Editorial" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>	<li id="li_3" >
+		<label class="description" for="element_3"><FONT SIZE="+1" COLOR="white" FACE="Arial">Genero</FONT> </label>
+		<div>
+			<input id="element_3" name="Genero" class="element text medium" type="text" maxlength="255" value=""/> 
+		</div> 
+		</li>		<li id="li_4" >
+		<label class="description" for="element_4"><FONT SIZE="+1" COLOR="white" FACE="Arial">Descripcion </FONT></label>
+		<div>
+			<textarea id="element_4" name="Descripcion" class="element textarea medium"></textarea> 
+		</div> 
+		</li>
+
+		</li>
+					<li class="buttons">
+			    <input type="hidden" name="form_id" value="1099625" />
+			    
+				<input id="saveForm" class="button_text" type="submit" name="submit" value="Submit" />
+		</li>
+			</ul>
+		</form>	
+		
+	</div>
+	<a href="PaginaInico.html">Ir al menu</a>
+	</body>
+</html>

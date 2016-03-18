@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Books</title>
+	<link rel="stylesheet" type="text/css" href="Diseño.css" />
+    <script>
+    function showUsers(str) {
+        if (str.length==0) { 
+            document.getElementById("listPos").innerHTML="";
+            return;
+        } else {
+            var xmlhttp=new XMLHttpRequest();
+            xmlhttp.onreadystatechange=function() {
+                if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+                    list = JSON.parse(xmlhttp.responseText);
+                    var text = "";
+                    for (i = 0; i < list.length; i++) { 
+                        text += "<div><a href='user?user=" + list[i] + "'>" + list[i] + "</a></div>";
+                    }
+                    document.getElementById("listPos").innerHTML=text;
+                }
+            }
+            xmlhttp.open("GET","usersList?letters="+str,true);
+            xmlhttp.send();
+        }    
+    }
+    </script>
+</head>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#home">Home</a></li>
+  <li><a href="#news">News</a></li>
+  <li><a href="#contact">Contact</a></li>
+  <li><a href="#about">About</a></li>
+</ul>
+
+</body>
+</html>
+
+<BODY>
+    <h8> Introduzca el titulo del libro que busca: </h8> <input type="text" value="" name="username" onkeyup="showUsers(this.value)">
+    <div><h3>Libros disponibles:</h3></div>
+    <div id="listPos"></div>
+	
+	
+	
+  <title>jQuery UI Dialog - Animation</title>
+  <link rel="stylesheet" href="HTTP://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="HTTP://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="HTTP://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+	
+	  <script>
+  $(function() {
+    $( "#dialog" ).dialog({
+      autoOpen: false,
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+ 
+    $( "#opener" ).click(function() {
+      $( "#dialog" ).dialog( "open" );
+    });
+  });
+    </script>
+  <div id="dialog"  title="Info">
+  <p>A la derecha de los titulos aparece su autor.
+  </p>
+</div>
+<button id="opener" SIZE=20>Info</button>
+
+<BR><a href="PaginaInico.html">Ir al menu</a>
+ 
+	
+</body>
+</html>

@@ -1,0 +1,7 @@
+The objective of the function and html "Conversaciones" is to display the conversations of the user introduced by the user in the text box. This is done by accessing a database with the information of the conversations and users that belong to each conversation. 
+
+Example: If you introduce Diego, it should display Conversacion2
+
+
+Note: There is a problem with the code, it doesn't display the conversations eventhough there are no errors. 
+

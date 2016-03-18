@@ -1,0 +1,8 @@
+Luis Izurrategui:
+
+LibrosDisponibles.Html
+userList.java
+
+
+This function shows the books available that can be bought or rent. 
+Open the html directly in order to see the CSS correctly

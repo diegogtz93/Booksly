@@ -1,0 +1,14 @@
+Hello im Marco, that is my resume about my part of the deliverable 2. First the two function wich i play with action are:
+- Show a data base with a list of books.
+- Use de UPDATE sentence to change some fields about the books.
+- You can look the book list "leidos" and edit the fields as you want, they use the function edit and writte the new values abotu the fields, they will change in the database.
+
+My part:
+	- MostrarLibros.Html
+	- MostrarLibros.java
+	- EditarLibro.html
+	- EditarLibro.java
+	
+I use a CSS to modificate the interface of all the archive and works with the oders.
+
+Thank you very much and i wish you to like it.

@@ -1,0 +1,19 @@
+a	a	1
+b	b	2
+c	c	3
+d	d	4
+Estoy entusiasmado	null	null
+Genial	null	null
+a	null	null
+a	weq	3
+dsfd	qwr	4
+MArco	Harry	2
+Harry Potter	Marco	2
+null	null	9	 Historico
+Jon	Teo va al parque	7	 Entretenido
+		\"0\"	 
+		\"0\"	 
+		\"0\"	 
+	a	2	 a
+a	a	10	 a
+lop	opo	3	 opl

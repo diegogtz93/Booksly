@@ -1,0 +1,11 @@
+Function Pablo Corral: Introducir Comentario (in the main web page)
+Documents:	-RegistroComentario2.java
+		-MostrarComentario.java
+		-IntroducirComentari.html
+
+Explanation: this function allows the user to introduce a review with punctuation about a book. If the field Usuario is not filled, a javascript message
+saying: "introduzca usuario" will be displayed. There is also one pull down menu called autores that shows the autors of the app.
+ Once everything is correctly filled, the information is sent into the database, where it is saved. If the user introduced in the field Usuario is not one of the users
+in the database, a new html is opened saying that the user is not registered and a link to the html RegistrarUsuario is shown. If the information introduced in the html
+IntroducirComentari.html, a new html is displayed showing a link to show all the opinions.
+When clicking on it, a list with all the opinions introduced is displayed.

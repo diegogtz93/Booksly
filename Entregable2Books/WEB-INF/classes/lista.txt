@@ -1,0 +1,4 @@
+4587	El principito	Antoine de Saint-Exupéry	Salamandra	Novela	2	Buena	25	5	02/09/1943
+7521	El niño con el pijama de rayas	John Boyne	Salamandra	Ficcion	8	Increible	33	12	05/04/2009
+
+

@@ -1,0 +1,10 @@
+Jon Gomez A903940
+Functions: Signin, login, logoff, changepassword.
+
+
+
+I've done four different functions. 
+The first, to record user ( signing ) , where you can choose two options, the first is where after filling in all fields , the user is registered in the database , and the other is that when you leave spaces white, takes you to a page where you can register . 
+Then, another in which you logged (login ) and you compare in a database if the user belongs already or not , if you belong you can enter, but it sends you to the page to register user.
+Another is to logoff page , where you closed session. And finally , change the password of a user who accesses the database and modify the new password by the old .
+Keep in mind that all these functions work with a database . All work properly .

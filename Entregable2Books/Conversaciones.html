@@ -1,0 +1,60 @@
+<HTML>
+<HEAD>
+<TITLE> NuevaConversacion </TITLE>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <script>
+    function showUsers(str) {
+        if (str.length==0) { 
+            document.getElementById("listPos").innerHTML="";
+            return;
+        } else {
+            var xmlhttp=new XMLHttpRequest();
+            xmlhttp.onreadystatechange=function() {
+                if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+                    list = JSON.parse(xmlhttp.responseText);
+                    var text = "";
+                    for (i = 0; i < list.length; i++) { 
+                        text += "<div><a href='user?user=" + list[i] + "'>" + list[i] + "</a></div>";
+                    }
+                    document.getElementById("listPos").innerHTML=text;
+                }
+            }
+            xmlhttp.open("GET","Conversaciones?letters="+str,true);
+            xmlhttp.send();
+        }    
+    }
+    </script>
+</HEAD>
+
+<BODY background= "Imagenes/fondo.jpg">
+<BR> </BR>
+<H2><align><center><Font > Mostrar Conversaciones  </Font></center></align></H2>
+
+		<table cellspacing="1" cellpadding="1" border="0" align="center" width="80%" summary="">
+			<tbody>
+				<tr>
+				<BR> </BR>
+				<BR> </BR>
+					
+					<td><Font >Nombre Usuario: </Font></td>			
+					<td align="left"><input type="text" name="Nombre" size="40"  onkeyup="showUsers(this.value)"/></td>
+					<tr>
+					<td> <div> Conversaciones:</div></td>
+					<div id="listPos"></div>
+					</tr>         
+				</tr>
+				<tr>
+				<td><center><INPUT TYPE="submit" value="Enviar"></td>	
+				</tr>
+			</tbody>
+		</table>
+	</form>
+
+<BR> </BR>
+<BR> </BR>
+<center><a href="PaginaInico.html">Ir al menu</a>
+
+</BODY>
+</HTML>
+
